@@ -55,7 +55,7 @@ Pympler==1.0.1
 pynput==1.7.6
 #pyobjc-core==9.0.1
 #pyobjc-framework-ApplicationServices==9.0.1
-pyobjc-framework-Cocoa==9.0.1
+#pyobjc-framework-Cocoa==9.0.1
 pyobjc-framework-Quartz==9.0.1
 pyrsistent==0.19.3
 PySimpleGUI==4.60.4
