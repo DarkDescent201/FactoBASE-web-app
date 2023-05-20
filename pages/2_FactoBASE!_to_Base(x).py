@@ -42,9 +42,9 @@ with col1:
     st.text("What base would you like your answer in?")
 with col2:
     user_num = st.number_input("Gimme nums", min_value=0, step=1, 
-                               label_visibility="hidden", help="It's not perfect.")
+                               help="It's not perfect.")
     user_base = st.number_input("Feel the base", min_value=0, step=1, 
-                                label_visibility="hidden", help="Think really hard.")
+                                help="Think really hard.")
     if user_base < 1:
         user_base = 10
 with col3:

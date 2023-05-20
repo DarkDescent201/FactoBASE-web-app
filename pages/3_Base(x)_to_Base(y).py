@@ -46,11 +46,11 @@ with col1:
     st.text("And what base do you desire?")
 with col2:
     user_num = st.number_input("Gimme nums", min_value=0, step=1,
-                               label_visibility="hidden", help="I can't wait to find out!")
+                               help="I can't wait to find out!")
     user_base = st.number_input("Feel the base", min_value=0, step=1, 
-                                label_visibility="hidden", help="I knew it!")
-    desired_base = st.number_input("Can you feel the base!?", min_value=0, step=1,
-                                   label_visibility="hidden", help="I couldn't have done better myself.")
+                                help="I knew it!")
+    desired_base = st.number_input("Too much base", min_value=0, step=1,
+                                   help="I couldn't have done better myself.")
     if user_base < 1:
         user_base = 10
     if desired_base < 1:
