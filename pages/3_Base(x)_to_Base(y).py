@@ -57,7 +57,7 @@ with col2:
         desired_base = 10
 with col3:
     st.title(" ")
-    button_press = st.button(label="Calculate")
+    button_press = st.button(label="Calculate", help="Numbers are hard.")
     if button_press:
         dec_num, desired_len, desired_num = base_to_base(user_num, user_base, 
                                                          desired_base)
