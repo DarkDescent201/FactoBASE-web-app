@@ -61,7 +61,7 @@ with st.form(key="form"):
 
     if button:
         email_message = EmailMessage()
-        email_content = str(raw_message+f"\n\nI am feeling {feeling}"+"\nI can be reached at {user_email}")
+        email_content = str(raw_message+f"\n\nI am feeling {feeling}."+f"\nI can be reached at {user_email}."+"\nEnd Transmission.")
         email_message.set_content(email_content)
         email_message["Subject"] = subject_line if subject_line else "No subject"
         email_message["from"] = user_email
