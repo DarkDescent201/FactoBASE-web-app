@@ -23,7 +23,7 @@ facto_list = [0, 1, 10, 11, 20, 21, 100, 101, 110, 111, 120, 121, 200,
 st.set_page_config(page_title="Welcome to FactoBASE!", page_icon=":exclamation:", layout="wide")
 col1, col2, col3 = st.columns(3, gap="large")
 with col1:
-    st.title("FactoBASE!")
+    st.title(":blue[FactoBASE!]")
 with col2:
     i = rnd(24)
     if i < 6:
