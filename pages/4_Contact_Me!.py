@@ -3,8 +3,6 @@ import streamlit as st
 import smtplib
 import ssl
 from email.message import EmailMessage
-import mimetypes
-from io import StringIO, BytesIO
 
 
 
