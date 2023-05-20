@@ -41,13 +41,15 @@ with col1:
     st.write("")
     st.text("What base would you like your answer in?")
 with col2:
-    user_num = st.number_input("Gimme nums", min_value=0, step=1, label_visibility="hidden")
-    user_base = st.number_input("Feel the base", min_value=0, step=1, label_visibility="hidden")
+    user_num = st.number_input("Gimme nums", min_value=0, step=1, 
+                               label_visibility="hidden", help="It's not perfect.")
+    user_base = st.number_input("Feel the base", min_value=0, step=1, 
+                                label_visibility="hidden", help="Think really hard.")
     if user_base < 1:
         user_base = 10
 with col3:
     st.title(" ")
-    button_press = st.button(label="Calculate")
+    button_press = st.button(label="Calculate", help="...are you sure about this?")
     if button_press:
         dec_num, base_len, base_num = facto_to_base(user_num, user_base)
 

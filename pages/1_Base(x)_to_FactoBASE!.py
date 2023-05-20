@@ -42,14 +42,14 @@ with col1:
     st.text("What base is it in?")
 with col2:
     user_num = st.number_input("Gimme nums", min_value=0, step=1,
-                               label_visibility="hidden")
+                               label_visibility="hidden", help="Letters are not allowed.")
     user_base = st.number_input("Feel the base", min_value=0, step=1, 
-                                label_visibility="hidden")
+                                label_visibility="hidden", help="... You tried it didn't you?")
     if user_base < 1:
         user_base = 10
 with col3:
     st.title(" ")
-    button_press = st.button(label="Calculate")
+    button_press = st.button(label="Calculate", help="I wouldn't recommend it.")
     if button_press:
         dec_num, facto_len, facto_num = base_to_facto(user_num, user_base)
 
