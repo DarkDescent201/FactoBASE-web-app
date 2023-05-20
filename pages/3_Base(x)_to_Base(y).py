@@ -45,11 +45,11 @@ with col1:
     st.write("")
     st.text("And what base do you desire?")
 with col2:
-    user_num = st.number_input("Gimme nums", min_value=0, step=1,
+    user_num = st.number_input("Excuse me, do you have any NUMs?", min_value=0, step=1,
                                help="I can't wait to find out!")
-    user_base = st.number_input("Feel the base", min_value=0, step=1, 
+    user_base = st.number_input("Is this your base?", min_value=0, step=1, 
                                 help="I knew it!")
-    desired_base = st.number_input("Too much base", min_value=0, step=1,
+    desired_base = st.number_input("Now that's a nice base", min_value=0, step=1,
                                    help="I couldn't have done better myself.")
     if user_base < 1:
         user_base = 10
@@ -57,7 +57,7 @@ with col2:
         desired_base = 10
 with col3:
     st.title(" ")
-    button_press = st.button(label="Calculate", help="Numbers are hard.")
+    button_press = st.button(label="Calculate", help="This is hard work, you know.")
     if button_press:
         dec_num, desired_len, desired_num = base_to_base(user_num, user_base, 
                                                          desired_base)
