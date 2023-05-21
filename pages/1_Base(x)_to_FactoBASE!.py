@@ -41,9 +41,9 @@ with col1:
     st.write("")
     st.text("What base is it in?")
 with col2:
-    user_num = st.number_input("Gimme NUMs", min_value=0, step=1,
+    user_num = st.number_input("Numbers go here.", min_value=0, step=1,
                                help="Letters are not allowed.")
-    user_base = st.number_input("Feel the base", min_value=0, step=1, 
+    user_base = st.number_input("Still only numbers.", min_value=0, step=1, 
                                 help="... You tried it didn't you?")
     if user_base < 1:
         user_base = 10

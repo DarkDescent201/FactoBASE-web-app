@@ -45,7 +45,7 @@ with col1:
     st.write("")
     st.text("And what base do you desire?")
 with col2:
-    user_num = st.number_input("Excuse me, do you have any NUMs?", min_value=0, step=1,
+    user_num = st.number_input("Well, what is it?", min_value=0, step=1,
                                help="I can't wait to find out!")
     user_base = st.number_input("Is this your base?", min_value=0, step=1, 
                                 help="I knew it!")

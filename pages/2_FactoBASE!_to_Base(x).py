@@ -41,10 +41,10 @@ with col1:
     st.write("")
     st.text("What base would you like your answer in?")
 with col2:
-    user_num = st.number_input("User will give NUMs now", min_value=0, step=1, 
+    user_num = st.number_input("Something doesn't seem right.", min_value=0, step=1, 
                                help="There's a flaw here.")
-    user_base = st.number_input("Just touching base", min_value=0, step=1, 
-                                help="Think really hard.")
+    user_base = st.number_input("Think really hard about it.", min_value=0, step=1, 
+                                help="Can you spot it?")
     if user_base < 1:
         user_base = 10
 with col3:
