@@ -41,8 +41,8 @@ with col1:
     st.write("")
     st.text("What base would you like your answer in?")
 with col2:
-    user_num = st.number_input("Something doesn't seem right.", min_value=0, step=1, 
-                               help="There's a flaw here.")
+    user_num = st.number_input("There's a flaw here.", min_value=0, step=1, 
+                               help="Actually, there's two.")
     user_base = st.number_input("Think really hard about it.", min_value=0, step=1, 
                                 help="Can you spot it?")
     if user_base < 1:
